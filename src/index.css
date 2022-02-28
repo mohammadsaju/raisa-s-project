@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply pt-20; 
+    }
+}
+
+@layer components {
+    /* form componform */
+    .form-logo{
+        @apply w-24 rounded-full mx-auto mb-4;
+    }
+    .google-btn{
+        @apply flex gap-3 items-center text-center w-full px-3 py-2 mb-2 border border-green-200 font-medium shadow-sm shadow-green-300 text-red-400 hover:shadow-lg hover:shadow-yellow-200 hover:border-yellow-200 transition;
+    }
+    .form-xs-text{
+        @apply text-sm underline text-slate-700 cursor-pointer font-medium hover:text-pink-600;
+    }
+    .form-lable{
+        @apply block uppercase font-medium text-slate-500;
+    }
+    .form-input{
+        @apply border px-5 py-2 text-slate-600 outline-none focus:shadow-inner mb-3;
+    }
+    .form-btn{
+        @apply block bg-purple-400 text-lg py-1 px-6 font-medium text-white my-4 hover:bg-blue-400 transition rounded-full;
+    }
+}
